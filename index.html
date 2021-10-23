@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript October 23 Demo</title>
+	</head>
+	<body>
+		<div class="div1">
+			<h1>Javascript October 23 Demo</h1>
+		</div>
+		<div class="div2">
+			<p id="practice"></p>
+			<script>
+				let x = new Date("2021-01-01");
+				document.getElementById("practice").innerHTML = Number(x);
+			</script>
+		</div>
+		<div class="div 3">
+			<script></script>
+		</div>
+		<div class="div 4">
+			<p>This is an example of an array:</p>
+			<p id="practice1"></p>
+			<script>
+				const car = ["color", "weight", "brand", "country"];
+				document.getElementById("practice1").innerHTML = car;
+			</script>
+			<h2>Accessing Arrays</h2>
+			<p id="practice2"></p>
+			<script>
+				const car1 = ["color", "weight", "brand", "country"];
+				x = car1[1];
+				document.getElementById("practice2").innerHTML = x;
+			</script>
+			<h2>Sorting Arrays in Random Order</h2>
+			<button type="button" onclick="myfunction()">
+				Click here to sort the numbers in random order!
+			</button>
+			<p id="practice3"></p>
+			<script>
+				const numberofficial = [1, 100, 1000, 2000, 3000];
+				document.getElementById("practice3").innerHTML = numberofficial;
+
+				function myfunction() {
+					numberofficial.sort(function (a, b) {
+						return 0.5 - Math.random();
+					});
+					document.getElementById("practice3").innerHTML = numberofficial;
+				}
+			</script>
+		</div>
+	</body>
+</html>
